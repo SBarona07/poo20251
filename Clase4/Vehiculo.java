@@ -31,14 +31,14 @@ public class Vehiculo {
         return marca;
     }
 
-    public void setMarca(String){
+    public void setMarca(String marca){
         this.marca = marca;
     }
 
     //Permite mostrar objetos
     public String toString(){
-        return "Vehiculo { marca: "+ marca + " Color: "+ color +" Cilindraje: "+ cilindraje +" Chasis: "+ Chasis +" Peso: "+ Peso +
-        " Potencia: "+ Potencia +" }";
+        return "Vehiculo { marca: "+ marca + " Color: "+ color +" Cilindraje: "+ cilindraje +" Chasis: "+ chasis +" Peso: "+ peso +
+        " Potencia: "+ potencia +" }";
     }
 
     //Metodos de la clase

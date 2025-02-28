@@ -6,11 +6,12 @@ public class Ejecutar {
         //Creacion de los objetos de la clase Vehiculo
 
         //Forma1
-        Vehiculo objVehiculo1 = new Vehiculo ("Toyota", "Blanco", 4500.0,, "TS45335WE", 2.3, "150HP");
+        Vehiculo objVehiculo1 = new Vehiculo("Toyota", "Blanco", 4500.0, "TS45335WE", 2.3, "150HP");
+
 
         //Forma2
-        Vehiculo obVehiculo2;
-        objVehiculo2 = new Vehiculo("Ferrari", "rojo", 5000.0 "SWREF345", 1.8, "450HP");
+        Vehiculo objVehiculo2;
+        objVehiculo2 = new Vehiculo("Ferrari", "rojo", 5000.0, "SWREF345", 1.8, "450HP");
 
         //Mostrar la marca del vehiculo del objeto Vehiculo
         System.out.println(objVehiculo1.getMarca());
@@ -23,6 +24,9 @@ public class Ejecutar {
         System.out.println(objVehiculo2);
 
 
-        
+        System.out.println(objVehiculo1.getMarca());
+        objVehiculo1.acelerar();
+        System.out.println(objVehiculo2.getMarca());
+        objVehiculo2.frenar();
     }
 }
