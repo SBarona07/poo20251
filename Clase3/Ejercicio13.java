@@ -20,7 +20,7 @@ public class Ejercicio13 {
         // Llenar el arreglo con numeros entre 0 y 50.
         for (int i = 0; i < a.length; i++) {
             a[i] = (int) (Math.random() * (50 - 0)) + 0;
-            System.out.println(a[i] + " " );
+            System.out.print(a[i] + " " );
             
         }
 
@@ -69,7 +69,7 @@ public class Ejercicio13 {
         System.out.println();
         //mostrar el arreglo de los menores a la media
         for (int i = 0; i < menores.length; i++) {
-            System.out.println(menores[i] + " ");
+            System.out.print(menores[i] + " ");
            }
 
     }
