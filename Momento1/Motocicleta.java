@@ -29,17 +29,17 @@
     }
 
     
-        public String setPlaca() {
-        return placa;
+        public void  setPlaca(String placa) {
+        this.placa = placa;
     }
-    public double setCilindraje() {
-        return cilindraje;
+    public void setCilindraje(double cilindraje) {
+        this.cilindraje = cilindraje;
     }
-    public String setMarca() {
-        return marca;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
-    public int setTiempo() {
-        return tiempo;
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
     }
 
     }
