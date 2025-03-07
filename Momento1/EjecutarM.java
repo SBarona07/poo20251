@@ -11,17 +11,36 @@ public class EjecutarM {
         String marca;
 
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Porfavor ingrese la placa: ");
+        int opcion;
+       do {
+        System.out.println("Menu principal: ");
+        System.out.println("1. Registro de moto");
+        System.out.println("2. Cobro del parqueadero");
+        System.out.println("3. Cerrar la aplicacion");
+        opcion = entrada.nextInt();
 
-        placa = entrada.next();
+        switch (opcion) {
+            case 1:
 
-        System.out.println("Porfavor ingrese el cilindraje: ");
+            System.out.println("Ingrese por favor su placa: ");
+            placa = entrada.next();
+            System.out.println("Ingrese por favor el cilindraje de su moto:");
+            cilindraje = entrada.nextDouble();
+            System.out.println("Ingrese  por favor la marca de su moto: ");
+            marca = entrada.next();
+            if (cilindraje <= 400  ) {
+                System.out.println("su moto es de bajo cilindraje ");
+                
+            }
+                
+           break;
+        
+            default:
+                break;
+        }
 
-        cilindraje = entrada.nextDouble();
-
-        System.out.println("Porfavor ingrese la marca: ");
-
-        marca = entrada.next();
+       } while (true);
+        
 
 
         
