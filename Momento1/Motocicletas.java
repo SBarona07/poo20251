@@ -1,13 +1,13 @@
 
  //Atributos de la clase
- public class Motocicleta {
+ public class Motocicletas {
     private String placa;
     private double cilindraje;
     private String marca;
     private int tiempo;
 
     //Contructor de la clase
-    public Motocicleta(String placa, double cilindraje, String marca, int tiempo){
+    public Motocicletas(String placa, double cilindraje, String marca, int tiempo){
         this.placa = placa;
         this.cilindraje = cilindraje;
         this.marca = marca;
