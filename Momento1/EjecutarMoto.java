@@ -64,7 +64,7 @@ if (buscarMoto(placa) != null) {
     System.out.println("Ingrese la marca de la moto:");
     String marca = entrada.next();
 
-    //Validad cilindraje segun el tipo de parqueadero
+    //Validar cilindraje segun el tipo de parqueadero
     if (tipo.equals("bajo cilindraje")) {
         if (cilindraje > 400) {
             System.out.println("Error : esa moto debe registrarse en el parqueadero de alto cilindraje ");
@@ -102,11 +102,11 @@ if (buscarMoto(placa) != null) {
     }
 
     if  (motos[puesto] !=null){
-        System.out.println("Error en el puesto" +(puesto + 1)+ "ya esta ocupado.");
+        System.out.println("Error en el puesto" +(puesto + 1 )+ " ya esta ocupado.");
         return;
     }
     motos[puesto] = moto;
-    System.out.println("moto registrada en el puesto " +(puesto + 1)+" ya esta ocupado.");
+    System.out.println("moto registrada en el puesto " +(puesto + 1 )+" ya esta ocupado.");
 }
 
     // Metodo para cobrar la tarifa
@@ -134,7 +134,7 @@ if (buscarMoto(placa) != null) {
         }
     }
 
-    // metodo para calcular la tarifa
+    // Metodo para calcular la tarifa
     private static double calcularTarifa(int tiempo) {
         if (tiempo <= 30) {
             return 0;
@@ -177,7 +177,7 @@ private static void liberarPuesto(Motocicletas moto){
         }
     }
 
-    // metodo para buscar una moto por su placa
+    // Metodo para buscar una moto por su placa
 private static Motocicletas buscarMoto(String placa){
     for(Motocicletas moto : bajocc){
         if (moto != null && moto.getPlaca().equals(placa)) {
