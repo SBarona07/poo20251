@@ -130,6 +130,34 @@ public static void cobrarTarifa(){
     }
 }
 
+// metodo para calcular la tarifa
+private static double calcularTarifa(int tiempo){
+    if (tiempo <= 30){
+        return 0;
+    } else if (tiempo <= 60){
+        return 800;
+    } else {
+        return 2000;
+    }
+}
+
+// Metodo para liberar un puesto
+private static void liberar(Motocicletas moto){
+    for(int i = 0; i < bajocc.length; i++){
+        if (bajocc[i] != null && bajocc[i].getPlaca().equals(moto.getPlaca())){
+            bajocc[i] = null;
+            System.out.println("puesto liberado en el parqueadero de bajo cilindraje");
+            return;
+        }
+    }
+    for(int i = 0; i< altocc.length; i++){
+        if (altocc[i] i = null && altocc[i].getPlaca().equals(moto.getPlaca())) {
+            altocc[i] = null;
+            System.out.println("puesto liberado en el parqueadero de alto cilindraje");
+            
+        }
+    }
+}
 
 }
 
