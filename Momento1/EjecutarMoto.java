@@ -106,7 +106,7 @@ if (buscarMoto(placa) != null) {
         return;
     }
     motos[puesto] = moto;
-    System.out.println("moto registrada en el puesto" +(puesto + 1)+"ya esta ocupado.");
+    System.out.println("moto registrada en el puesto " +(puesto + 1)+" ya esta ocupado.");
 }
 
     // Metodo para cobrar la tarifa
@@ -120,12 +120,17 @@ if (buscarMoto(placa) != null) {
         Motocicletas moto = buscarMoto(placa);
 
         if (moto != null) {
-            System.out.println("ingrese el tiempo del estacionamiento en minutos");
+            System.out.println("ingrese el tiempo del estacionamiento en minutos: ");
             int tiempo = entrada.nextInt();
 
             double tarifa = calcularTarifa(tiempo);
-            System.out.println(" la tarifa a pagar es :$ ");
+            System.out.println(" la tarifa a pagar es :$ " + tarifa);
 
+            liberarPuesto(moto);
+
+        }else{
+            System.out.println("moto no encontrada.");
+            
         }
     }
 
@@ -141,7 +146,7 @@ if (buscarMoto(placa) != null) {
     }
 
     // Metodo para liberar un puesto
-private static void liberar(Motocicletas moto){
+private static void liberarPuesto(Motocicletas moto){
     for(int i = 0; i < bajocc.length; i++){
         if (bajocc[i] != null && bajocc[i].getPlaca().equals(moto.getPlaca())){
             bajocc[i] = null;
