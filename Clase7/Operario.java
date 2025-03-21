@@ -7,7 +7,7 @@ public class Operario extends Trabajador {
 
     //Constructor --> Heredfa de la superclase idTrabajador, nombre , apellido
     public Operario(int idTrabajador, String nombre, String apellido, double horas) {
-        super(idTrabajador, apellido, nombre, apellido);
+        super(idTrabajador, nombre, apellido);
         this.horas = horas;
 
     }
@@ -19,9 +19,9 @@ public class Operario extends Trabajador {
 
     public String toString() {
         return "Operario{ idTrabajador: " + super.getIdTrabajador() +
-                "Nombre: " + super.getNombre() +
-                "Apellido: " + super.getApellido() +
-                " Horas Laboradas:" + horas + "}";
+                " Nombre: " + super.getNombre() +
+                " Apellido: " + super.getApellido() +
+                " Horas Laboradas: " + horas + "}";
     }
 
 }
