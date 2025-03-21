@@ -19,6 +19,10 @@ public class Trabajador {
         return nombre;
     } 
     
+    public String getApellido(){
+        return apellido;
+    }
+
     public int getIdTrabajador(){
         return idTrabajador;
     }
