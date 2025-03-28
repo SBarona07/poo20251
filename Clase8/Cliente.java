@@ -10,6 +10,6 @@ public class Cliente {
     }
     
     public String toString(){
-        return "Cliente{ CC: " + cedula + "Nombre:" + nombre + "}";
+        return "Cliente{ CC: " + cedula + " Nombre:" + nombre + "}";
     }
 }
