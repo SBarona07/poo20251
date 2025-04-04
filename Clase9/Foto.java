@@ -1,0 +1,14 @@
+package Clase9;
+
+public class Foto {
+
+    //Atributos
+    private String fichero;
+
+    //Metodo
+    public void print(){
+        
+    }
+
+    
+}
