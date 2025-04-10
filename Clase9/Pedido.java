@@ -38,5 +38,15 @@ public class Pedido extends Producto {
         return numeroTarjetaCredito;
     }
 
+    //el toString es el metodo que se usa para mostrar la info de la clase.
+    public String toString() {
+        return "Pedido[" +
+                "Cliente=" + cliente +
+                ", Producto=" + java.util.Arrays.toString(producto) +
+                ", Fecha=" + fecha +
+                ", NumeroTarjetaCredito=" + numeroTarjetaCredito +
+                ']';
+    }
+
     
 }

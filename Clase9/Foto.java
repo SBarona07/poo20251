@@ -41,12 +41,12 @@ public class Foto {
         return numeroCopias;
     }
     public String toString() {
-        return "Foto{" +
-                "fichero='" + fichero + '\'' +
-                ", fotoColor='" + fotoColor + '\'' +
-                ", fotoBlancoNegro='" + fotoBlancoNegro + '\'' +
-                ", numeroCopias=" + numeroCopias +
-                '}';
+        return "Foto[" +
+                "Fichero: '" + fichero + '\'' +
+                ", FotoColor: '" + fotoColor + '\'' +
+                ", FotoBlancoNegro: '" + fotoBlancoNegro + '\'' +
+                ", NumeroCopias: " + numeroCopias +
+                ']';
     }
     
     }

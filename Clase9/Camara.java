@@ -28,11 +28,11 @@ public class Camara extends Producto {
     }
 
     public String toString() {
-        return "Camara{" +
-                "Marca='" + Marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", codigo=" + codigo +
-                '}';
+        return "Camara[" +
+                "Marca: '" + Marca + '\'' +
+                ", Modelo: '" + modelo + '\'' +
+                ", Codigo: " + codigo +
+                ']';
     }
     
 

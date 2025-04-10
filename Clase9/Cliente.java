@@ -3,26 +3,26 @@ package Clase9;
 public class Cliente {
 
     //Atributos
-    private String cedula;
+    private int cedula;
     private String nombre;
-    private String numeroTelefono;
+    private int numeroTelefono;
     private String correoElectronico;
 
     //Constructor
-    public Cliente(String cedula, String nombre, String numeroTelefono, String correoElectronico) {
+    public Cliente(int cedula, String nombre, int numeroTelefono, String correoElectronico) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.numeroTelefono = numeroTelefono;
         this.correoElectronico = correoElectronico;
     }
     //Metodos
-    public String getCedula() {
+    public int getCedula() {
         return cedula;
     }
     public String getNombre() {
         return nombre;
     }
-    public String getNumeroTelefono() {
+    public int getNumeroTelefono() {
         return numeroTelefono;
     }
     public String getCorreoElectronico() {
@@ -30,12 +30,12 @@ public class Cliente {
     }
 
     public String toString() {
-        return "Cliente{" +
-                "cedula='" + cedula + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", numeroTelefono='" + numeroTelefono + '\'' +
-                ", correoElectronico='" + correoElectronico + '\'' +
-                '}';
+        return "Cliente[" +
+                "Cedula: '" + cedula + '\'' +
+                ", Nombre: '" + nombre + '\'' +
+                ", NumeroTelefono: '" + numeroTelefono + '\'' +
+                ", CorreoElectronico: '" + correoElectronico + '\'' +
+                ']';
     }
 
 

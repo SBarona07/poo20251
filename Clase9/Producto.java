@@ -46,12 +46,12 @@ public class Producto {
 
 
     public String toString(){
-        return "Producto{" + 
-        "numero=" + numero +
-        ",nombre=" + nombre +
-        ",precio=" + precio +
-        ",referencia=" + referencia +
-        ",ancho=" + ancho +
-        ",alto=" + alto + "}";
+        return "Producto[" + 
+        " Numero: " + numero +
+        ", Nombre: " + nombre +
+        ", Precio: " + precio +
+        ", Referencia: " + referencia +
+        ", Ancho: " + ancho +
+        ", Alto: " + alto + "]";
     }
 }
