@@ -27,6 +27,15 @@ public class Camara extends Producto {
         return codigo;
     }
 
+    public String toString() {
+        return "Camara{" +
+                "Marca='" + Marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", codigo=" + codigo +
+                '}';
+    }
+    
+
 
     
 }

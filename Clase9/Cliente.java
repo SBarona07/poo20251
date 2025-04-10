@@ -29,6 +29,15 @@ public class Cliente {
         return correoElectronico;
     }
 
+    public String toString() {
+        return "Cliente{" +
+                "cedula='" + cedula + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", numeroTelefono='" + numeroTelefono + '\'' +
+                ", correoElectronico='" + correoElectronico + '\'' +
+                '}';
+    }
+
 
 
 
