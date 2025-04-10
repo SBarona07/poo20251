@@ -7,7 +7,11 @@ public class Impresion extends Producto {
     private Foto[] foto; // Arreglo de fotos
 
     // Constructor
-    public Impresion(Foto[] foto, String color) {
+    public Impresion(Foto[] foto, String color, int numero, String nombre, double precio,
+            String referencia, double ancho, double alto) {
+        super(numero, nombre, precio, referencia, ancho, alto); // Llamada al constructor de la clase padre
+    
+        // Inicializa los atributos de la clase hija
         this.color = color;
         this.foto = foto;
     }
@@ -36,8 +40,8 @@ public class Impresion extends Producto {
     // El toString es el metodo que se usa para mostrar la info de la clase.
     public String toString() {
         return "Impresion{" +
-                " color='" + color + '\'' +
-                ", foto=" + java.util.Arrays.toString(foto) +
+                " color=" + color + '\'' +
+                " foto=" + java.util.Arrays.toString(foto) +
                 '}';
     }
 }

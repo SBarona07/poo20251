@@ -5,14 +5,16 @@ public class Producto {
     //Atributos
     private int numero;
     private String nombre;
+    private double precio;
     private String referencia;
     private double ancho;
     private double alto;
 
     //Constructor
-    public Producto(int numero, String nombre, String referencia, double ancho, double alto){
+    public Producto(int numero, String nombre,double precio, String referencia, double ancho, double alto){
         this.numero = numero;
         this.nombre = nombre;
+        this.precio = precio;
         this.referencia = referencia;
         this.ancho = ancho;
         this.alto = alto;
@@ -25,6 +27,9 @@ public class Producto {
 
     public String getNombre(){
         return nombre;
+    }
+    public double getPrecio(){
+        return precio;
     }
 
     public String getReferencia(){
@@ -39,10 +44,12 @@ public class Producto {
         return alto;
     }
 
+
     public String toString(){
         return "Producto{" + 
         "numero=" + numero +
         ",nombre=" + nombre +
+        ",precio=" + precio +
         ",referencia=" + referencia +
         ",ancho=" + ancho +
         ",alto=" + alto + "}";

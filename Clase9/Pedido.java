@@ -11,7 +11,9 @@ public class Pedido extends Producto {
     private int numeroTarjetaCredito;
 
     //Constructor
-    public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito){
+    public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito ,
+            int numero, String nombre, double precio, String referencia, double ancho, double alto) {
+        super(numero, nombre, precio, referencia, ancho, alto); // Llamada al constructor de la clase padre
         this.cliente = cliente;
         this.producto = producto;
         this.fecha = fecha;
