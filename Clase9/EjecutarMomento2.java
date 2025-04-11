@@ -54,9 +54,8 @@ public class EjecutarMomento2 {
 
         //crear un arreglo de fotos
         Foto[] fotos = new Foto[3];
-        fotos[0] = new Foto("foto1.jpg", "Color", null, 1);
-        fotos[1] = new Foto("foto1.jpg", "Color", null, 1);
-        fotos[2] = new Foto("foto1.jpg", "Color", null, 1);
+        fotos[1] = new Foto("foto2.jpg", "Color", null, 1);
+        fotos[2] = new Foto("foto3.jpg", "Color", null, 1);
 
 
         // Crear un objeto de la clase Impresion
